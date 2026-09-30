@@ -22,3 +22,7 @@ Open `index.html` in a browser.
 - More FRC-specific fields
 - Svelte frontend
 - Google Apps Script synchronization
+
+## Development
+
+This project was built as a learning project to practice frontend web development, JavaScript, browser storage, and Git/GitHub workflows.
