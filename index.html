@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PitScout | FRC Pit Scouting</title><link rel="stylesheet" href="style.css">
+</head>
+<body><main class="container">
+<header><p class="eyebrow">FRC Scouting Tool</p><h1>PitScout</h1><p class="subtitle">Offline pit scouting reports</p></header>
+<section class="card"><h2>New Scout Report</h2><form id="scout-form">
+<div class="grid"><div class="field"><label for="team-number">Team Number</label><input id="team-number" type="number" min="1" required></div>
+<div class="field"><label for="robot-name">Robot Name</label><input id="robot-name" type="text" maxlength="60" required></div>
+<div class="field"><label for="drivetrain">Drivetrain</label><select id="drivetrain" required><option value="">Select one</option><option>Swerve</option><option>Tank</option><option>Other</option></select></div>
+<div class="field"><label for="scout-name">Scout Name</label><input id="scout-name" type="text" maxlength="60"></div></div>
+<div class="field"><label for="notes">Notes</label><textarea id="notes" rows="5" maxlength="500" placeholder="Robot capabilities, mechanisms, strategy, questions..."></textarea></div>
+<button type="submit">Save Scout Report</button></form></section>
+<section class="card"><div class="section-header"><div><h2>Saved Reports</h2><p id="report-count">0 reports</p></div><input id="search" class="search" type="search" placeholder="Search teams..."></div>
+<div id="reports" class="reports"></div><p id="empty-state" class="empty">No reports yet. Add your first scout report above.</p></section>
+</main><script src="script.js"></script></body></html>
